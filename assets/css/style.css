@@ -6,39 +6,64 @@
 
 body {
     background-color: #d9dcd6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+header {
     background-color: #2a607c;
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+	left: 0;
+    padding: 20px;
     color: #ffffff;
 }
 
-.header h1 {
+h1.logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ nav {
+
+	float: right;
+    padding: 20px;
     font-size: 20px;
+
 }
 
-.header div ul {
-    list-style-type: none;
+ nav ul {
+
+	list-style: none;
+
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+ nav li {
+
+	display: inline-block;
+    padding: 0 10px;
+
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url("../images/hamburg-menu.png") center;
+
+}
+
+a:hover#menu-icon {
+
+	border-radius: 4px 4px 0 0;
+
 }
 
 a {
@@ -86,55 +111,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-child {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* condensing benefit classes */
+.benefit-child h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-child img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.service-section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,58 +136,70 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.service-section img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.service-section h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+}    
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
+}
+
+/* check size of device to adjust for small screens and mobile */
+@media only screen and (max-width : 1050px) {
+
+	#menu-icon {
+
+		display:inline-block;
+
+    }
+    
+    nav {
+
+        float: right;
+        padding: 10px 20px;
+        font-size: 20px;
+    
+    }
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+        background-color: #2a607c;
+        opacity: .7;
+		border: 3px solid #0072bb;
+		right: 50px;
+		top: 60px;
+		width: 340px;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+    }
 }
