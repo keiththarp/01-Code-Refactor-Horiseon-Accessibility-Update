@@ -8,6 +8,15 @@ body {
     background-color: #d9dcd6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
 
 header {
     background-color: #2a607c;
@@ -100,54 +109,65 @@ p {
     width: 100%;
     padding: 15px;
 }
-
+/*
 .test-container > div {
     color: white;
     margin: 3px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
     flex-grow: 1;
-  }
+  }*/
 div.content-column-one {
     color: #ffffff;
     margin: 6px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    flex-grow: 5;
+    flex: 70%;
 }
 
 div.content-column-one > div {
     background-color: #0072bb;
     margin-bottom: 18px;
+    padding: 25px;
 }
 
 div.services {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-div.services > div {
-background-color: black;
-max-width: 200px;
-flex-grow: 1;
+div.services-1 {
 }
+
+div.services-2 {
+    max-width: 60%;
+    }
 
 div.services img {
-    max-width: 200px;
+    max-width: 300px;
+    margin: 24px 20px;
 }
 
-div.content-column-two {
+.content-column-two {
     background-color: #2589bd;
     color: white;
     margin: 6px;
+    flex: 25%;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    flex-grow: 1;
+    max-width: 300px;
+    padding: 25px;
+    margin-bottom: 24px;
 }
 
+.content-column-two div {
+    margin-bottom: 25px;
+}
+
+.content-column-two img {
+    max-width: 150px;
+}
+
+.content-column-two p {
+    text-align: left;
+}
+/*
 div.content {
     display: flex;
     flex-wrap: wrap;
@@ -160,10 +180,10 @@ div.service-column {
 }
 
 .service-container {
-    /*margin-bottom: 20px;
+    margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    width: 65%;*/
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -201,7 +221,7 @@ div.service-column {
     margin: 10px auto;
     max-width: 150px;
 } 
-
+*/
 footer {
     padding: 30px;
     clear: both;
