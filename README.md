@@ -17,6 +17,5 @@ Altered element tags to use semantic HTML tags for ease of reading.
 
 Consolidated the repetition of CSS properties.
 
-```
-In an effort to improve the mobile presentation of the site, I restructured the HTML/CSS to use flexbox. While maintaining the same large screen appearance as before, the site now gracefully reorganizes for mobile viewing.
-```
+**In an effort to improve the mobile presentation of the site, I restructured the HTML/CSS to use flexbox. While maintaining the same large screen appearance as before, the site now gracefully reorganizes for mobile viewing.**
+
