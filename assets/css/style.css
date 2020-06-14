@@ -8,6 +8,13 @@ body {
     background-color: #d9dcd6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    font-size: 48px;
+}
+
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -16,6 +23,19 @@ h2 {
 h3 {
     margin-bottom: 10px;
     text-align: center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+hr {
+    margin: 25px 0;
 }
 
 header {
@@ -29,212 +49,115 @@ header {
     color: #ffffff;
 }
 
-h1.logo {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline-block;
-    font-size: 48px;
-}
-
+/* Styling for Horiseon h1 logo */
 .seo {
     color: #d9dcd6;
 }
 
- nav {
-
+nav {
 	float: right;
     padding: 20px;
     font-size: 20px;
-
 }
 
- nav ul {
-
+nav ul {
 	list-style: none;
-
 }
 
- nav li {
-
+nav li {
 	display: inline-block;
     padding: 0 10px;
-
 }
 
 #menu-icon {
-
 	display: hidden;
 	width: 40px;
 	height: 40px;
 	background: url("../images/hamburg-menu.png") center;
-
 }
 
 a:hover#menu-icon {
-
 	border-radius: 4px 4px 0 0;
-
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-.hero {
-    height: 800px;
+figure.hero {
     width: 100%;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    max-height: 900px;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
-}
-/*
-.float-left {
-    float: left;
-    margin-right: 25px;
+} 
+
+.hero > img {
+    width: 100%;
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-*/
-
-.test-container {
+main.container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
     padding: 15px;
 }
-/*
-.test-container > div {
-    color: white;
-    margin: 3px;
-    flex-grow: 1;
-  }*/
-div.content-column-one {
+
+div.main-column {
     color: #ffffff;
     margin: 6px;
-    flex: 70%;
+    flex-basis: 70%;
 }
 
-div.content-column-one > div {
+section.services {
     background-color: #0072bb;
     margin-bottom: 18px;
     padding: 25px;
-}
-
-div.services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-div.services-1 {
-}
 
-div.services-2 {
-    max-width: 60%;
-    }
-
-div.services img {
+section.services img {
     max-width: 300px;
     margin: 24px 20px;
 }
 
-.content-column-two {
+div.services-text {
+    max-width: 52%;
+    }
+
+aside.right-column {
     background-color: #2589bd;
     color: white;
     margin: 6px;
     flex: 25%;
     text-align: center;
-    max-width: 300px;
     padding: 25px;
     margin-bottom: 24px;
 }
 
-.content-column-two div {
+.right-column div {
     margin-bottom: 25px;
 }
 
-.content-column-two img {
+.right-column img {
     max-width: 150px;
 }
 
-.content-column-two p {
+.right-column p {
     text-align: left;
 }
-/*
-div.content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 15px;
-}
 
-div.service-column {
-    flex-grow: 3;
-}
-
-.service-container {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    width: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.service-container img {
-    width: 200px;
-}
-
-.service-container > h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}  
-
-.benefits {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #2589bd;
-}
-
-.benefit-child {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-child h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-child img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} 
-*/
 footer {
     padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    */text-align: center; 
 }
 
 footer h2 {
     font-size: 20px;
 }
 
-/* check size of device to adjust for small screens and mobile */
-@media only screen and (max-width : 1050px) {
+/* check size of device to adjust nav for small screens and mobile */
+@media only screen and (max-width : 1092px) {
 
 	#menu-icon {
 
@@ -243,7 +166,7 @@ footer h2 {
     }
     
     nav {
-        float: right;
+        /* float: right; */
         padding: 10px 20px;
         font-size: 20px;
     }
@@ -266,9 +189,19 @@ footer h2 {
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
-	}
+    }
+    nav li.hide-list-item {
+        display: none;
+    }
 
 	nav:hover ul {
 		display: block;
     }
+
+    section.services img {
+        order: 2;
+    }
+    div.services-text {
+        max-width: 100%;
+        }
 }
