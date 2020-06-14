@@ -1,5 +1,6 @@
 # Horiseon-Accessibility-Update
-Update Horiseon Social Solution Services, Inc. for SEO and accessibility standards
+Update Horiseon Social Solution Services, Inc. for SEO and accessibility standards.
+View site here - https://keiththarp.github.io/Horiseon-Accessibility-Update/
 
 ## Initial Assessment
 Uppon initial viewing of the website, I realized the site was not optimized for mobile viewing.
