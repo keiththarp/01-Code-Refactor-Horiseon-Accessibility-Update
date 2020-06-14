@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -86,7 +86,7 @@ a:hover#menu-icon {
 
 /* Banner image size and styling */
 figure.hero {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 94px;
     max-height: 800px;
     overflow: hidden;
@@ -99,7 +99,7 @@ figure.hero {
 main.container {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 45px;
     justify-content: center;
 }
 
@@ -134,7 +134,7 @@ aside.right-column {
     background-color: #2589bd;
     color: white;
     margin: 6px;
-    flex: 25%;
+    flex-basis: 25%;
     text-align: center;
     padding: 25px;
     margin-bottom: 24px;
