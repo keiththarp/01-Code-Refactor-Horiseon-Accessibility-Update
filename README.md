@@ -12,11 +12,16 @@ I used information from this blog post to create a mobile/small screen friendly 
 
 Added link to main logo to return to HOME as is standard.
 
-Added link for first section #SEO
+Repaired Nav link for #SEO section
 
 Altered element tags to use semantic HTML tags for ease of reading.
+Commented HTML for ease of reading.
+Added alt text for images. > 8600 pixel image for 1700px display. > 7000 pixel image for 300px display, etc.
 
 Consolidated the repetition of CSS properties.
+Organized and commented CSS for ease of reading
+
+Resized images for load speeds to aid SEO. Images were dramatically oversized.
 
 **In an effort to improve the mobile presentation of the site, I restructured the HTML/CSS to use flexbox. While maintaining the same large screen appearance as before, the site now gracefully reorganizes for mobile viewing.**
 
