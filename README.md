@@ -3,25 +3,36 @@ Update Horiseon Social Solution Services, Inc. for SEO and accessibility standar
 View site here - https://keiththarp.github.io/Horiseon-Accessibility-Update/
 
 ## Initial Assessment
-Uppon initial viewing of the website, I realized the site was not optimized for mobile viewing.
+Upon initial viewing of the website, I realized the site was not optimized for mobile viewing.
 
 Given the client business and story, along with current trends, it seemed appropriate to address the mobile and small screen presentation of the website as an accessibility issue along with cleaning and reformatting the code for semantics and accessibility.
 
-## Notes on project
-I used information from this blog post to create a mobile/small screen friendly menu - https://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu
+## Notes on refactoring project
+For accessibility sake, I decided to restructure the site matching the existing design/layout, using CSS grid. I tried flexbox first but given the two dimensional layout, grid ended up working better.
 
-Added link to main logo to return to HOME as is standard.
+**HEADER/NAV**
+* Starting from the top, the first change was dealing with the long menu breaking out of the header on smaller screens. - I used information from this blog post to create a mobile/small screen friendly menu - https://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu
+* Added link to main logo to return to HOME as is standard.
+* Repaired Nav link for #SEO section
+* Added pipes to delineate menu items in desktop nav (removed on mobile)
 
-Repaired Nav link for #SEO section
+**HERO IMAGE**
+Again, for accessibility sake I moved the hero image out of the background and added alt text.
 
-Altered element tags to use semantic HTML tags for ease of reading.
-Commented HTML for ease of reading.
-Added alt text for images. > 8600 pixel image for 1700px display. > 7000 pixel image for 300px display, etc.
+**MAIN HTML**
+* Altered tags to use semantic HTML tags for ease of reading.
+* Commented HTML for ease of reading.
+* Added 'horizontal rule' dividers between sections for readability in sidebar.
 
-Consolidated the repetition of CSS properties.
-Organized and commented CSS for ease of reading
+**IMAGES**
+* Added alt text for images. 
+* To fix slow loading of site I resized all images. Most were excessively large. > 8600 pixel image for 1700px display. > 7000 pixel image for 300px display, etc.
 
-Resized images for load speeds to aid SEO. Images were dramatically oversized.
+**CSS**
+* Consolidated the repetition of CSS properties.
+* Added media query to redraw site for smaller screens with grid layout.
+* Organized and commented CSS for ease of reading
 
-**In an effort to improve the mobile presentation of the site, I restructured the HTML/CSS to use flexbox. While maintaining the same large screen appearance as before, the site now gracefully reorganizes for mobile viewing.**
+
+
 
