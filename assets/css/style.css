@@ -7,6 +7,14 @@
 body {
     background-color: #d9dcd6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-rows: 95px 89vh auto 100px;
+    grid-template-columns: auto 70% auto auto;
+    grid-template-areas: "header header header header"
+    "hero hero hero hero"
+    ". main sidebar ."
+    "footer footer footer footer";
 }
 
 header h1, footer {
@@ -42,9 +50,9 @@ hr {
 }
 
 header {
-    background-color: #2a607c;
+    grid-area: header;
     width: 100%;
-    height: 95px;
+    background-color: #2a607c;
     position: fixed;
     top: 0;
 	left: 0;
@@ -85,78 +93,63 @@ a:hover#menu-icon {
 }
 
 /* Banner image size and styling */
-figure.hero {
-    /* width: 100%; */
-    padding-top: 94px;
-    max-height: 800px;
-    overflow: hidden;
+figure {
+    grid-area: hero;
 } 
 
 .hero > img {
-    width: 100%;
-}
-
-main.container {
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
 }
 
 /* Left column properties */
 div.main-column {
+    grid-area: main;
     color: #ffffff;
-    margin: 6px;
-    flex-basis: 70%;
-
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto auto auto;
 }
 
 /* Individual services section properties */
+
 section.services {
     background-color: #0072bb;
-    margin-bottom: 18px;
     padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
+/* Righ column properties */
 
-section.services img {
-    max-width: 100%;
-    margin: 24px 20px;
+aside {
+    grid-area: sidebar;
+    margin-top: 1em;
 }
-
-div.services-text {
-    max-width: 52%;
-    }
 
 aside.right-column {
     background-color: #2589bd;
     color: white;
-    margin: 6px;
-    flex-basis: 25%;
-    text-align: center;
     padding: 25px;
-    /* margin-bottom: 24px; */
-}
-
-/* Right column properties */
-.right-column div {
-    margin-bottom: 25px;
-}
+    text-align: center;
+} 
 
 .right-column img {
     max-width: 150px;
-}
+} 
 
 .right-column p {
     text-align: left;
 }
 
 footer {
+    grid-area: footer;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 20px 0;
 }
 
 footer h4 {
@@ -165,7 +158,17 @@ footer h4 {
 }
 
 /* check size of device to adjust nav for small screens and mobile */
-@media only screen and (max-width : 1092px) {
+@media only screen and (max-width : 1080px) {
+
+    body {
+        grid-template-rows: 95px auto auto auto 100px;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "header header header"
+        "hero hero hero"
+        ". main ."
+        ". sidebar ."
+        "footer footer footer";
+    }
 
 	#menu-icon {
 
@@ -205,8 +208,18 @@ footer h4 {
 		display: block;
     }
 
+    section.services {
+        background-color: #0072bb;
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+    }
+
     section.services img {
         order: 2;
+        padding-top: 20px;
     }
     div.services-text {
         max-width: 85%;
